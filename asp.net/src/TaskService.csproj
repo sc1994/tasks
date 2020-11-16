@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.0" NoWarn="NU1605" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="SkyAPM.Agent.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="SkyAPM.Diagnostics.EntityFrameworkCore.Sqlite" Version="1.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\source\Aspire.AutoMapper\Aspire.AutoMapper.csproj" />
+    <ProjectReference Include="..\source\Aspire.EfCore\Aspire.EfCore.csproj" />
+    <ProjectReference Include="..\source\Aspire.FormCreate.ElementUi\Aspire.FormCreate.ElementUi.csproj" />
+    <ProjectReference Include="..\source\Aspire\Aspire.csproj" />
+  </ItemGroup>
+
+</Project>
